@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>"Amy's Awesome Website"</text>
+                <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    
+    <body>
+         <!-- All content goes here -->
+         <div id="all-contents"> 
+            <nav>
+                <h1>"Amy's Wonderland Website"</h1>
+                    <ul id="nav-ul">
+                        <li>
+                            <a href="index.html"> Home </a>
+                        </li>
+                        <li>
+                             <a href="portfolio.html"> Portfolio </a>
+                        </li>
+                    </ul>
+            </nav>
+
+            <main>
+                <!--Sidebar section-->
+                <div class="sidebar">
+                    <img class="sidebar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7KOHSncdZJMYG0JvDZ0srj2NzrffP_ezTmzUeMiLONPu2EFI%3Ahttps%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5e15f900289a0e270b50be77%2F1580240445111-U2K01ULNVL1DLD4E8M5K%2Fke17ZwdGBToddI8pDm48kLoJGYlVoiE7gPOnwrm5yUh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfpUUgLaG6hbAxxLztyrGCfE1bN56N04lPNZ9LdwD1uBtfYk0dVZayboTAeqjnjomg%2FDSC_7954.jpg&usqp=CAU">
+                </div>
+                <!--Content section-->
+                <div class="content">
+                    <h2>"Amy Ndiaye"</h2>
+                    <p>"Student at Benjamin Franklin High School"</p>
+                    <!--Interests section-->
+                        <div id="interests">
+                            <h3>"Interests"</h3>
+                            <ul>
+                                <li>"Crocheting"</li>
+                                <li>"Eating"</li>
+                                <li>"Exploring"</li>
+                            </ul>
+                        </div>
+                </div>
+            </main>
+         </div>
+    </body>
+</html>
