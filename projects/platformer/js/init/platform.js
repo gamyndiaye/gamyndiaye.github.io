@@ -40,16 +40,12 @@
         createPlatform(400, 250);
         createPlatform(170, 460, 0.5);
         createPlatform(400, 460);           // normal platform
-        createPlatform(300, 200, 0.3)       // small horizontal platform (30% the normal width)
-        createPlatform(500, 500, 0.3, 10)   // tall vertical wall (30% the normal width and 10x the height)
+        createPlatform(300, 200, 0.3);       // small horizontal platform 
+        createPlatform(500, 500, 0.3, 10);   // tall vertical wall 
         
-        createCollectable(type.steve, 200, 170, 6, 0.7);
-        createCollectable(type.grace, 510, 510, 6, 0.7);
-        createCollectable(type.kennedi, 310, 215, 6, 0.7)
+       
 
-        createCannon("top", 450); // a cannon on the top of the screen, located at x = 450
-        createCannon("left", 300, 1000); // a cannon on the left side of the screen, located at y = 300, with a 1 second delay (1000ms) 
-
+        
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     }
