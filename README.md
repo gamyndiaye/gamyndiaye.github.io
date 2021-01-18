@@ -38,5 +38,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 To push changes:
 git add .
-git commit -m
+git commit -m 'short phrase on what changed'
 git push
