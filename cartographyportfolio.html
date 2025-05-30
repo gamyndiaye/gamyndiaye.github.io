@@ -78,6 +78,40 @@
                 text-decoration: none;
                 color: #454545;
             }
+
+            .project-gallery {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px; /* Space between items */
+              justify-content: center; /* Center the items */
+            }
+            
+            .project-item {
+              flex: 1 1 300px; /* Grow and shrink as needed, with a base width of 300px */
+              max-width: 300px;
+              text-align: center;
+            }
+            
+            .project-item img {
+              width: 100%;
+              height: auto;
+              display: block;
+              border-radius: 8px; /* Optional: adds rounded corners to images */
+            }
+            
+            .project-item p {
+              margin-top: 10px;
+              font-size: 1em;
+              color: #333;
+            }
+            
+            @media (max-width: 600px) {
+                .project-item {
+                  flex: 1 1 100%;
+                }
+          }
+
+
         </style>
     </head>
 
