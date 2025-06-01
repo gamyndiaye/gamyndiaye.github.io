@@ -6,8 +6,9 @@
             body {
                 background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
-                padding: 10px;
+                padding: 0px;
                 font-family: arial;
+                margin: 0;
             }
             header {
                 font-size: 1.5em;
@@ -15,8 +16,9 @@
             }
             
             #all-contents {
-                max-width: 800px;
-                margin: auto;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
             }
     
             /* navigation menu */
@@ -48,10 +50,12 @@
             main {
                 background: rgb(245, 238, 219);
                 display: flex;
+                flex-wrap: wrap;
+                padding: 20px;
             }
             .content {
-                flex: 1;
-                padding: 15px;
+                flex: 3 1 600px;
+                padding: 10px;
             }
              /* portfolio styles */
             .content h1 {
