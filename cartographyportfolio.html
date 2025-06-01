@@ -4,7 +4,7 @@
         <title>Aminata Ndiaye</title>
         <style type="text/css">
             body {
-                background: rgb(245, 198, 205);
+                background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
                 padding: 0;
                 font-family: arial;
@@ -89,6 +89,12 @@
               gap: 20px; /* Space between items */
               justify-content: center; /* Center the items */
             }
+            .project-gallery img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 2px 6 px rgba(0,0,0,0.15);
+            }
             
             .project-item {
               flex: 1 1 300px; /* Grow and shrink as needed, with a base width of 300px */
@@ -116,7 +122,12 @@
                 main{
                     flex-direction: column;
                 }
-          }
+            }
+            img:hover {
+                cursor: zoom-in;
+                opacity: 0.95;
+                transition: opacity 0.2s ease;
+            }
 
 
         </style>
@@ -141,7 +152,9 @@
                 <p>This is a collection of ArcGIS projects I have done from 2021-2025. Site underconstruction. Descriptions will be added soon. </p>
                 <div class ="project-gallery">
                   <div class="project-item">
-                    <img src="images/marquettework.jpg">
+                    <a href="images/marquettework.jpg" target ="_blank">
+                        <img src="images/marquettework.jpg" alt="remote sensing">
+                    </a>
                     <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
                   </div>
 
