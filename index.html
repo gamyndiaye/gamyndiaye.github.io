@@ -4,14 +4,15 @@
         <title>Aminata Ndiaye</title>
             <style>
             body {
-                margin: 0;
+                /* margin: 0;
                 padding: 0;
                 background-color: #fdf6e3;
-                font-family: sans-serif;
-/*                 background: rgb(125, 198, 205);
+                font-family: sans-serif; */
+                background: rgb(245, 238, 219);
                 color: rgb(45, 45, 45);
                 font-family: arial;
-                padding: 10; */
+                padding: 0;
+                margin: 0;
             }
             #all-contents {
                 /*width: 100%;
@@ -20,9 +21,8 @@
                 margin: auto;
                 padding: 10; */
                 max-width: 1200px;
-                margin: 2rem auto;
-                padding: 1rem;
-                background-color: transparent;
+                margin: 0 auto;
+                padding: 20px;
             }
 
             /* navigation menu */
@@ -59,9 +59,13 @@
                 padding 0;*/
                 background: rgb(245, 238, 219);
                 display: flex;
+                flex-wrap: wrap;
+                padding: 20px;
             }
             .sidebar {
-                margin-right: 35px;
+                /*margin-right: 35px;
+                padding: 10px; */
+                flex: 1 1 300px;
                 padding: 10px;
             }
              #sidebar-img{
@@ -85,8 +89,8 @@
                 padding: 10px; */
             }
             .content {
-                flex: 1;
-                padding: 15px;
+                flex: 3 1 600px;
+                padding: 10px;
             }
             #interests {
                 border: 4px silver ridge;
@@ -109,6 +113,14 @@
                 height: auto;
                 display: block;
                 margin: 1rem 0;
+            }
+            @media (max-width: 768px) {
+                main{
+                    flex-direction: column;
+                }
+                .sidebar, .content {
+                    flex: 1 1 100%;
+                }
             }
 
         </style>
