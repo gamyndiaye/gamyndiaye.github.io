@@ -32,23 +32,32 @@
                 margin: 0 auto;
                 margin-bottom: 20px;
             }
-            h1 {
+            .nav-conainer {
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
+            }
+            h1 {
+/*                 display: flex;
+                align-items: center;
+                flex: 1; */
                 color: white;
-                flex: 1;
                 margin: 0;
             }
             #nav-ul {
-                list-style-image: none;
+                list-style: disc;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
             }
-            .nav-li {
+            #nav-ul li {
                 display: inline-block;
-                padding: 0 10px;
             }
             a {
                 text-decoration: none;
                 color: black;
+                font-weight: bold;
             }
 
             /* main container area beneath menu */
@@ -137,19 +146,14 @@
          <!-- All content goes here -->
          <div id="all-contents"> 
             <nav>
-                <h1>Aminata Ndiaye</h1>
+                <div class="nav-container">
+                    <h1>Aminata Ndiaye</h1>
                     <ul id="nav-ul">
-                        <li>
-                            <a href="index.html"> Home </a>
-                        </li>
-                        <li>
-                             <a href="programmingportfolio.html"> Programming Portfolio </a>
-                        </li>
-                        <li>
-                             <a href="cartographyportfolio.html"> Cartography Portfolio </a>
-                        </li>
-
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="programmingportfolio.html"> Programming Portfolio </a></li>
+                        <li><a href="cartographyportfolio.html"> Cartography Portfolio </a></li>
                     </ul>
+                </div>
             </nav>
             <main>
                 <!--Sidebar section-->
