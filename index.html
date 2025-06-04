@@ -90,6 +90,11 @@
                 height: autp;
                 position: relative; /* change with page */
             }
+            .page-layout {
+                diplay: flex;
+                flex-wrap: wrap;
+                background: rgb(245, 238, 219);
+            }
             .profile-pic {
                 width: 120px;
                 height: auto;
@@ -112,6 +117,7 @@
             .content {
                 flex: 1;
                 padding: 10px;
+                min-width: 0;
             }
             
             #interests {
@@ -133,7 +139,7 @@
                 margin: 1rem 0;
             }
             @media (max-width: 768px) {
-                main{
+                .page-layout{
                     flex-direction: column;
                 }
                 .sidebar, .content {
@@ -156,7 +162,8 @@
                     </ul>
                 </div>
             </nav>
-            <main>
+
+            <div class="page-layout">
                 <!--Sidebar section-->
                 <div class="sidebar">
                     <img src="images/headshot.jpg" alt="Headshot Image of Aminata Ndiaye" class="profile-pic"> 
@@ -166,8 +173,9 @@
                         <p>New Orleans, LA</p>
                     </div>
                 </div>
-
-
+            </div>
+            
+            <main>
                 <!--Content section-->
                 <div class="content">
                     <h2>Aminata Ndiaye</h2>
