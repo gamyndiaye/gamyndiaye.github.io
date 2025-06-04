@@ -59,7 +59,9 @@
                 background: rgb(245, 238, 219);
                 display: flex;
                 flex-wrap: wrap;
+                flex-direction: row; /* horizontal change with page change */
                 padding: 20px;
+                gap: 20px;
             }
 /*             .sidebar {
                 flex: 0 0 250px;
@@ -68,23 +70,21 @@
                 box-shadow: 2px 0 5px rgba(0,0,0,0.1);
             } */
             .sidebar {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 250px;
-            padding: 20px;
-            background-color: #f5f5f5;
-            border-right: 2px solid #ddd;
-            height: 100vh;
-            position: fixed; /* stick to side */
-            left: 0;
-            top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border-right: 2px solid #ddd;
+                height: autp;
+                position: relative; /* change with page */
             }
             .profile-pic {
-            width: 120px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 15px;
+                width: 120px;
+                height: auto;
+                border-radius: 50%;
+                margin-bottom: 15px;
 
             }
             .contact-info {
@@ -164,7 +164,7 @@
 
 
                 <!--Content section-->
-                <div>
+                <div class="content">
                     <h2>Aminata Ndiaye</h2>
                     <!--Bio Section-->
                     <p>I am an Environmental Engineering graduate from the University of Michigan with a deep
