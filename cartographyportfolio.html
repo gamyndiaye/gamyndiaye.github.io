@@ -1,19 +1,20 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Aminata Ndiaye</title>
+        <title>Aminata's Cartography Page</title>
         <style type="text/css">
+            /* Body and Global */
             body {
                 background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
                 padding: 0;
-                font-family: arial;
+                font-family: Arial, sans-serif;
                 margin: 0;
             }
-            header {
+/*             header {
                 font-size: 1.5em;
                 font-weight: bold;
-            }
+            } */
             
             #all-contents {
                 max-width: 1200px;
@@ -28,18 +29,24 @@
                 display: flex;
                 padding: 10px;
             }
-            h1 {
+            .nav-container {
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                color: rgb(255, 255, 255);
-                flex: 1;
+            }
+            h1 {
+                color: white;
+                margin: 0;
             }
             #nav-ul {
-                list-style-image: none;
+                list-style: disc;
+                margin: 0;
+                padding-left: 20px;
+                text-align: left;
             }
-            .nav-li {
-                display: inline-block;
-                padding: 0 10px;
+            #nav-ul li {
+                display: list-item;
+                padding: 5px 0;
             }
             .nav-a {
                 text-decoration: none;
@@ -56,12 +63,10 @@
             .content {
                 flex: 3 1 600px;
                 padding: 10px;
-            }
-             /* portfolio styles */
-            .content h1 {
                 color: black;
             }
             
+             /* portfolio styles */
             #portfolio {
                 list-style-type: none;
                 padding-left: 0;
@@ -89,12 +94,12 @@
               gap: 20px; /* Space between items */
               justify-content: center; /* Center the items */
             }
-            .project-gallery img {
+/*             .project-gallery img {
                 max-width: 100%;
                 height: auto;
                 border-radius: 8px;
                 box-shadow: 0 2px 6 px rgba(0,0,0,0.15);
-            }
+            } */
             
             .project-item {
               flex: 1 1 300px; /* Grow and shrink as needed, with a base width of 300px */
@@ -115,6 +120,7 @@
               color: #333;
             }
             
+            /* responsive styles */
             @media (max-width: 600px) {
                 .project-item {
                   flex: 1 1 100%;
@@ -128,121 +134,162 @@
                 opacity: 0.95;
                 transition: opacity 0.2s ease;
             }
-
-
+             .modal {
+                display: none;
+                position: fixed;
+                z-index: 999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.7);
+            }
+    
+            .modal-content {
+                margin: 5% auto;
+                display: block;
+                max-width: 80%;
+                max-height: 80%;
+            }
+    
+            .modal-content img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+    
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+            }
         </style>
     </head>
 
     <body>
-      <div id="all-contents">
-        <nav>
-            <h1>Aminata Ndiaye</h1>
-            <ul id="nav-ul">
-                <li class="nav-li">
-                  <a class="nav-a" href="index.html">Home</a>
-                </li>
-                <li class="nav-li">
-                  <a class="nav-a" href="programmingportfolio.html">Programming Portfolio</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <div class="content">
-                <h1>Cartography Portfolio</h1>
-                <p>This is a collection of ArcGIS projects I have done from 2021-2025. Site underconstruction. Descriptions will be added soon. </p>
-                <div class ="project-gallery">
-                  <div class="project-item">
-                    <a href="images/marquettework.jpg" target ="_blank">
-                        <img src="images/marquettework.jpg" alt="remote sensing">
-                    </a>
-                    <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
-                  </div>
-
-                  
-                  <div class="project-item">
-                    <img src="images/final_layout_easlab12.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/LayoutApr6.png"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/Layout_environA2.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/MS Layout 4.10.png"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/MS Layout FINAL.png"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/NH Layout 4.10.png"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/final_layout_easlab4.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/NH Layout FINAL.png"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/final_layout_easlab4.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/gandiaye_easlab2_layout.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/gandiaye_layout_easlab1.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                    
-                  <div class="project-item">
-                    <img src="images/layout practice pacific northwest.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-
-                  <div class="project-item">
-                    <img src="images/layout_environ_A3.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-
-                  <div class="project-item">
-                    <img src="images/map_layout_easlab78.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-
-                  <div class="project-item">
-                    <img src="images/map_layout_easlab9.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-
-                  <div class="project-item">
-                    <img src="images/vents layout final.jpg"  >
-                    <p>Project Description</p>
-                  </div>
-                  <!-- Add more project items as needed -->
-                 </div>
-            </div>
-
-        </main>
+        <div id="all-contents">
+            <nav>
+                <div class="nav-container">
+                    <h1>Cartography Portfolio</h1>
+                    <ul id="nav-ul">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="programmingportfolio.html"> Programming Portfolio </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div class="content">
+                    <h1>Cartography Portfolio</h1>
+                    <p>This is a collection of ArcGIS projects I have done from 2021-2025. Site underconstruction. Descriptions will be added soon. </p>
+                    <div class ="project-gallery">
+                        
+                        <!--LIST OF PROJECTS-->
+                            
+                        <div class="project-item">
+                            <img src="images/marquettework.jpg" alt="remote sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/final_layout_easlab12.jpg" alt="1g" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>  
+                        <div class="project-item">
+                            <img src="images/LayoutApr6.png" alt="remote 2" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/Layout_environA2.jpg" alt="3 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/MS Layout 4.10.png" alt="remote 4" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/MS Layout FINAL.png" alt="remote 5" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>  
+                        <div class="project-item">
+                            <img src="mages/NH Layout 4.10.png" alt="remote 6" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="mages/final_layout_easlab4.jpg" alt="7 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/NH Layout FINAL.png" alt="remote 8" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/final_layout_easlab4.jpg" alt="9 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/gandiaye_easlab2_layout.jpg" alt="10 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/gandiaye_layout_easlab1.jpg" alt="11 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/layout practice pacific northwest.jpg" alt="12 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/layout_environ_A3.jpg" alt="remote 13" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/map_layout_easlab78.jpg" alt="14 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/map_layout_easlab9.jpg" alt="15 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div>  
+                        <div class="project-item">
+                            <img src="images/vents layout final.jpg" alt="16 sensing" onclick="openModal(this.src)">
+                            <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of Matthew Dupasquier's machine learning model that assessed the health of green infrastructure (GI) sites using satellite and drone imagery. I incorporated additional indicative GI health parameters and using them to rank the sites based on their health ratings. This could help alleviate personnel and resource challenges for GI maintenance while providing frequent and direct monitoring.</p>
+                        </div> 
+                    </div>
+                </div>
+            </main>
         </div>
+        
+        <!-- Modal Structure -->
+        
+        <div id="imgModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content" id="modal-img-container">
+                <img id="modal-img" src="" alt="Enlarged project image">
+            </div>
+        </div>
+    
+        <!-- Modal JS -->
+        <script>
+            function openModal(src) {
+                document.getElementById("imgModal").style.display = "block";
+                document.getElementById("modal-img").src = src;
+            }
+    
+            function closeModal() {
+                document.getElementById("imgModal").style.display = "none";
+            }
+    
+            // Optional: close modal when clicking outside the image
+            window.onclick = function(event) {
+                const modal = document.getElementById("imgModal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
