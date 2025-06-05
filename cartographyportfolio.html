@@ -248,33 +248,5 @@
             </main>
         </div>
         
-        <!-- Modal Structure -->
-        
-        <div id="imgModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="modal-content" id="modal-img-container">
-                <img id="modal-img" src="" alt="Enlarged project image">
-            </div>
-        </div>
-    
-        <!-- Modal JS -->
-        <script>
-            function openModal(src) {
-                document.getElementById("imgModal").style.display = "block";
-                document.getElementById("modal-img").src = src;
-            }
-    
-            function closeModal() {
-                document.getElementById("imgModal").style.display = "none";
-            }
-    
-            // Optional: close modal when clicking outside the image
-            window.onclick = function(event) {
-                const modal = document.getElementById("imgModal");
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
     </body>
 </html>
