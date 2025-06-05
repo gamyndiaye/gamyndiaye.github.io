@@ -3,24 +3,15 @@
     <head>
         <title>Home Page</title>
             <style>
+            /* Body and Global */
             body {
-                /* margin: 0;
-                padding: 0;
-                background-color: #fdf6e3;
-                font-family: sans-serif; */
                 background: rgb(125, 198, 205);
                 color: rgb(45, 45, 45);
-                font-family: arial;
+                font-family: Arial, sans-serif;
                 padding: 0;
                 margin: 0;
-                
             }
             #all-contents {
-                /*width: 100%;
-                height: auto; this is a diff sec
-                max-width: 800px;
-                margin: auto;
-                padding: 10; */
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 10px;
@@ -39,9 +30,6 @@
                 align-items: center;
             }
             h1 {
-/*                 display: flex;
-                align-items: center;
-                flex: 1; */
                 color: white;
                 margin: 0;
             }
@@ -61,27 +49,22 @@
                 font-weight: bold;
             }
 
-            /* main container area beneath menu */
-            main {
-                /*width: 100%;
-                margin: 0 auro;
-                padding 0;*/
-                background: rgb(245, 238, 219);
-                flex: 1;
-                padding: 20px;
-            }
-/*             .sidebar {
-                flex: 0 0 250px;
-                background-color: #f4f4f4;
-                padding: 20px;
-                box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            } */
+            /* layout wrapper (horizontal flex container) */
+            .layout-wrapper {
+                display: flex;
+                align-items: stretch;
+                gap: 0;
+            }    
+
+            /* sidebar */
             .sidebar {
                 flex: 0 0 250px;
                 padding: 20px;
                 background-color: #f5f5f5;
                 border-right: 2px solid #ddd;
-                /*position: relative;  change with page */
+                display: flex;           
+                flex-direction: column;  
+                align-items: center; 
             }
             .profile-pic {
                 width: 120px;
@@ -92,26 +75,22 @@
             .contact-info {
                 text-align: center;
             }        
-
-            #sidebar-img{
-                width: 20px;
-                height: auto;
-                padding: 10px;
-                /*margin-right: 25px;
-                padding: 10px;
-                border: 2px solid black; */
+                
+                
+            /* main container area beneath nav menu */
+            main {
+                /*width: 100%;
+                margin: 0 auro;
+                padding 0;*/
+                background: rgb(245, 238, 219);
+                flex: 1;
+                padding: 20px;
             }
             .content {
                 flex: 1;
                 padding: 10px;
                 min-width: 0;
             }
-            .layout-wrapper {
-                display: flex;
-                align-items: stretch;
-                gap: 0;
-            }
-                
             #interests {
                 border: 4px silver ridge;
                 padding: 8px;
@@ -124,16 +103,17 @@
               position: relative;
               overflow: visible;
             } 
+
+            /* images */    
             img {
                 max-width: 100%;
                 height: auto;
                 display: block;
                 margin: 1rem 0;
             }
+
+            /* responsive styles */
             @media (max-width: 768px) {
-                main{
-                    flex-direction: column;
-                }
                 .sidebar, .content {
                     flex: 1 1 100%;
                 }
@@ -146,7 +126,7 @@
          <div id="all-contents"> 
             <nav>
                 <div class="nav-container">
-                    <h1>Aminata Ndiaye</h1>
+                    <h1><u>Welcome to my page!</u></h1>
                     <ul id="nav-ul">
                         <li><a href="index.html"> Home </a></li>
                         <li><a href="programmingportfolio.html"> Programming Portfolio </a></li>
@@ -168,7 +148,7 @@
                 <main>
                     <!--Content section-->
                     <div class="content">
-                        <h2>Aminata Ndiaye</h2>
+                        <h2>About Me</h2>
                         <!--Bio Section-->
                         <p>I am an Environmental Engineering graduate from the University of Michigan with a deep
                         passion for data informed solutions to environmental challenges. Growing up in New
@@ -186,8 +166,8 @@
                             <div id="interests">
                                 <h3>Interests</h3>
                                 <ul>
-                                    <li>Cartography Portfolio <a href="cartographyportfolio.html" target=" "> (click here to see my portfolio)</a></li>
-                                    <li>Programming Portfolio <a href="programmingportfolio.html" target=" "> (click here to see my portfolio)</a></li>
+                                    <li>Cartography Portfolio <a href="cartographyportfolio.html" target="_blank"> (click here to see my portfolio)</a></li>
+                                    <li>Programming Portfolio <a href="programmingportfolio.html" target="_blank"> (click here to see my portfolio)</a></li>
                                 </ul>
                             </div>
                     </div>
