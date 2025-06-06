@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Aminata's Technical Writing Portfolio</title>
+        <style type="text/css">
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 0;
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+            #all-contents {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            nav {
+                background: rgb(239, 80, 41);
+                margin-bottom: 20px;
+                padding: 15px 25px;
+            }
+            .nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            h1 {
+                color: white;
+                margin: 0;
+            }
+            h2 {
+                color: black;
+                font-family: Arial, sans-serif;
+                text-decoration: underline;
+                font-size: 16px;
+                margin: 20px 0 10px;
+                padding: 5px 10px;
+                background-color: rgb(245, 238, 219);
+                width: 100%;
+                display: block;
+            }
+            #nav-ul {
+                list-style: disc;
+                margin: 0;
+                padding-left: 20px;
+            }
+            #nav-ul li {
+                display: list-item;
+                padding: 5px 0;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            main {
+                background: rgb(245, 238, 219);
+                padding: 20px;
+            }
+            .content {
+                padding: 10px;
+                color: black;
+            }
+            .pdf-entry {
+                background: white;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+            .pdf-entry p {
+                margin: 10px 0;
+            }
+            .pdf-link {
+                display: inline-block;
+                padding: 8px 16px;
+                background: rgb(239, 80, 41);
+                color: white;
+                border-radius: 6px;
+                font-weight: bold;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+            .pdf-link:hover {
+                background: rgb(200, 60, 30);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="all-contents">
+            <nav>
+                <div class="nav-container">
+                    <h1>Technical Writing Portfolio</h1>
+                    <ul id="nav-ul">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="cartographyportfolio.html"> Cartography Portfolio </a></li>
+                        <li><a href="programmingportfolio.html"> Programming Portfolio </a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <div class="content">
+                    <h3>This page showcases technical writing samples from research, class papers, and internships. Most entries include PDF documents and descriptions of the work or context.</h3>
+
+                    <h2>Research & Conference Papers</h2>
+
+                    <div class="pdf-entry">
+                        <p><strong>Title:</strong> Remote Sensing and Machine Learning for Stormwater Infrastructure Assessment</p>
+                        <p><strong>Summary:</strong> This conference paper was submitted as part of my summer REU at the University of Michigan in 2023. It discusses the use of NDVI and supervised classification to assess green infrastructure maintenance needs using drone and satellite data. The methodology includes ArcGIS Pro, ModelBuilder, and Python integration.</p>
+                        <a class="pdf-link" href="pdfs/ndiaye_reu23_confpaper.pdf" target="_blank">View PDF</a>
+                    </div>
+
+                    <!-- Add more PDF entries here in the same format -->
+                    
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
