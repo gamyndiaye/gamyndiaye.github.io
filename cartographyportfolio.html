@@ -38,7 +38,11 @@
                 font-family: Arial, sans-serif;
                 text-decoration: underline;
                 font-size: 16px;
-                border: 4px rgb(245, 238, 219);
+                margin: 20px 0 10px;
+                padding: 5px 10px;
+                background-color: rgb(245, 238, 219); /* tan background */
+                width: 100%;
+                display: block;
             }
             #nav-ul {
                 list-style: disc;
@@ -177,16 +181,16 @@
             </nav>
             <main>
                 <div class="content">
-                    <h2>This is a collection of ArcGIS projects I completed between 2021 and 2025. By creating these I've learned how to use geoprocessing tools, 
+                    <h3>This is a collection of ArcGIS projects I completed between 2021 and 2025. By creating these I've learned how to use geoprocessing tools, 
                         use statistics, use model builder, integrate python, create map layouts, organize databases, and normalize importated data for ArcGIS Pro
                         Most recently I've learned how to use ERDAS Imagine for remote sensing map and data manipulation and then use ArcGIS Pro to visualize the data.
-                        Site under construction. </h2>
-                    <div class ="project-gallery">
-                        
-                        <!--LIST OF PROJECTS-->
+                        Site under construction. </h3>
+                    
+                    <!--LIST OF PROJECTS-->
 
-                        <h1>Personal or Unassisted Projects</h1>
-                        <p>   </p>
+                    <h2>Personal or Unassisted Projects</h2>
+                    <p>   </p>
+                    <div class ="project-gallery">
                         <div class="project-item">
                             <img src="images/marquettework.jpg" alt="marquette" onclick="openModal(this.src)">
                             <p>'Utilizing Remote Sensing and Machine Learning to Predict Green Infrastructure Maintenance Needs'. I built off of 
@@ -214,9 +218,12 @@
                             <img src="images/layout_environ_A3.jpg" alt="environA3" onclick="openModal(this.src)">
                             <p>Used downloaded data and georpocessing tools to create to show the health hazards from nuclear radation exposure at different bounds.</p>
                         </div>
+                    </div>
 
-                        <h1>Mostly unassisted class projects</h1>
+                        <h2>Mostly unassisted class projects</h2>
                         <p>   </p>
+                    
+                    <div class ="project-gallery">
                         <div class="project-item">
                             <img src="images/final_layout_easlab12.jpg" alt="1ab12" onclick="openModal(this.src)">
                             <p>Map composition of Digital Elevation Model & Digital Surface Model. Used ERDAS Imagine remote sensing software to pre-process LiDAR data & convert data points into terrain surfaces.</p>
@@ -248,8 +255,8 @@
                         </div>  
                         <!--<div class="project-item">
                             <img src="images/vents layout final.jpg" alt="environV" onclick="openModal(this.src)">
-                            <p>vent locations</p>-->
-                        </div>
+                            <p>vent locations</p>
+                        </div>-->
                     </div>
                 </div>
             </main>
