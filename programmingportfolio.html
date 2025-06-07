@@ -9,11 +9,6 @@
                 padding: 10px;
                 font-family: arial;
             }
-            header {
-                font-size: 1.5em;
-                font-weight: bold;
-            }
-            
             #all-contents {
                 max-width: 800px;
                 margin: auto;
@@ -22,9 +17,13 @@
             /* navigation menu */
             nav {
                 background: rgb(239, 80, 41);
-                margin: 0 auto;
+                margin-bottom: 20px;
+                padding: 15px 25px;
+            }
+            .nav-container {
                 display: flex;
-                padding: 10px;
+                justify-content: space-between;
+                align-items: center;
             }
             h1 {
                 display: flex;
@@ -35,13 +34,14 @@
             #nav-ul {
                 list-style-image: none;
             }
-            .nav-li {
+            .nav-ul li {
                 display: inline-block;
                 padding: 0 10px;
             }
-            .nav-a {
+            a {
                 text-decoration: none;
-                color: #fff;
+                color: black;
+                font-weight: bold;
             }
     
             /* main container area beneath menu */
@@ -84,14 +84,11 @@
     <body>
       <div id="all-contents">
         <nav>
-            <h1>Aminata Ndiaye</h1>
+            <h1>Programming Portfolio</h1>
             <ul id="nav-ul">
-                <li class="nav-li">
-                  <a class="nav-a" href="index.html">Home</a>
-                </li>
-                <li class="nav-li">
-                  <a class="nav-a" href="cartographyportfolio.html">Cartography Portfolio</a>
-                </li>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="cartographyportfolio.html"> Cartography Portfolio </a></li>
+                <li><a href="technicalwritingportfolio.html"> Technical Writing Portfolio </a></li>
             </ul>
         </nav>
         <main>
