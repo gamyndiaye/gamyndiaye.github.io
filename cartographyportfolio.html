@@ -108,8 +108,8 @@
               gap: 20px; /* Space between items */
               justify-content: center; /* Center the items */
             }
-            .project-item {
-              flex: 1 1 300px; /* Grow and shrink as needed, with a base width of 300px */
+/*             .project-item {
+              flex: 1 1 300px;  Grow and shrink as needed, with a base width of 300px 
               max-width: 300px;
               text-align: center;
             }
@@ -119,6 +119,26 @@
               height: 230px;
               display: block;
               border-radius: 8px; 
+            }
+ */
+            .project-item {
+                flex: 1 1 300px;
+                max-width: 300px;
+                text-align: center;
+                height: 235px; /* fixed height */
+                display: flex;
+                align-items: center; /* vertically center the image */
+                justify-content: center; /* horizontally center the image */
+                overflow: hidden; /* prevents overflow */
+            }
+            
+            .project-item img {
+                max-height: 100%; /* ensure image fits within 235px */
+                max-width: 100%; /* don't overflow container width */
+                height: auto;
+                width: auto;
+                border-radius: 8px;
+                display: block;
             }
             
             .project-item p {
