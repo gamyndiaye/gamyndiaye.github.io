@@ -103,48 +103,31 @@
             }
 
             .project-gallery {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 20px; /* Space between items */
-              justify-content: center; /* Center the items */
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px; /* Space between items */
+                justify-content: center; /* Center the items */
             }
-/*             .project-item {
-              flex: 1 1 300px;  Grow and shrink as needed, with a base width of 300px 
-              max-width: 300px;
-              text-align: center;
-            }
-            
-            .project-item img {
-              width: 100%;
-              height: 230px;
-              display: block;
-              border-radius: 8px; 
-            }
- */
             .project-item {
-                flex: 1 1 300px;
+                flex: 1 1 300px;  Grow and shrink as needed, with a base width of 300px 
                 max-width: 300px;
                 text-align: center;
-                height: 235px; /* fixed height */
-                display: flex;
-                align-items: center; /* vertically center the image */
-                justify-content: center; /* horizontally center the image */
-                overflow: hidden; /* prevents overflow */
             }
             
             .project-item img {
-                max-height: 100%; /* ensure image fits within 235px */
-                max-width: 100%; /* don't overflow container width */
-                height: auto;
-                width: auto;
-                border-radius: 8px;
+                width: 100%;
+                height: 235px;
                 display: block;
+                border-radius: 8px; 
+            }
+            .item-uniqwidth {
+                width: 360px
             }
             
             .project-item p {
-              margin-top: 10px;
-              font-size: 1em;
-              color: #333;
+                margin-top: 10px;
+                font-size: 1em;
+                color: #333;
             }
             
             /* responsive styles */
@@ -228,7 +211,7 @@
                             & python integration with model builder, classification wizard, and a comparison of pixel- & object-based classification for accuracy. See more about this project <a href="technicalwritingportfolio.html"> here</a>. </p>
                         </div>
                         <div class="project-item">
-                            <img src="images/LayoutApr6.png" alt="climate463" onclick="openModal(this.src)">
+                            <img src="images/LayoutApr6.png" class:"item-uniqwidth" alt="climate463" onclick="openModal(this.src)">
                             <p>Created for an analysis of air pollution meterology on criteria pollutants emitted from large point sources in Wayne County, Michigan. Used geocoder with coordinates 
                             to identify areas. </p>
                         </div>
@@ -237,12 +220,12 @@
                             <p>Map created using downloaded data from govt. sites to show LA fire density in various locations over time.</p>
                         </div>
                         <div class="project-item">
-                            <img src="images/environ_final_MS.jpg" alt="environfinal" onclick="openModal(this.src)">
+                            <img src="images/environ_final_MS.jpg" class:"item-uniqwidth" alt="environfinal" onclick="openModal(this.src)">
                             <p>Conducted a study examining the relationships between food deserts, race, and income in Mississippi and New Hampshire. Gained experience extracting data from online 
                                 sources and maps, processing various file formats for use in ArcGIS, and transforming data to minimize distortions for accurate comparisons.</p>
                         </div>
                         <div class="project-item">
-                            <img src="images/layout_environ_A3.jpg" alt="environA3" onclick="openModal(this.src)">
+                            <img src="images/layout_environ_A3.jpg" class:"item-uniqwidth" alt="environA3" onclick="openModal(this.src)">
                             <p>Visualized health hazards from nuclear radiation exposure across varying distance-based zones. Used geoprocessing tools such as Clip, Buffer, and Spatial Join 
                                 to isolate relevant features within specific exposure bounds & transformed data to reduce distortion.</p>
                         </div>
